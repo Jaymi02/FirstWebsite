@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root{
+    --background: rgb(66, 65, 65);
+    --foreground: #2e2e2e;
+}
+
+body{
+  font-size: large;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(66, 65, 65);
+}
+
+.z{
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+  color: #00ACED; 
+}
+
+.content {
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.head1{
+    color: #0076cb;
+    text-align: center;
+}
+
+.head2{
+    color: #ffbf00;
+    text-align: center;
+}
+
+.head2:hover{
+    transform: scale(1.1);
+    text-align: center;
+}
+
+.head3{
+    color: #ee0aee;
+    margin-left: 5%;
+}
+
+.p2{
+    text-align: right;
+}
+
+.company{
+    color: #ffbf00;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ffbf00;
+    color: white;
+}
+
+
+.topnav input[type=text]:hover {
+    background-color:#ddd ;
+    color: black;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+   }
+   
+.imgC {
+     max-width: 100%;
+     max-height:100%;
+   }
+
+.imgC1{
+    max-width: 100%;
+    max-height:100%;
+    margin-left: 13%;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  
+  .clip {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .svg--source {
+    display: none
+  }
+  
+  .svg--icon {
+    width: 100%;
+    max-width: 5rem;
+    height: 100%;
+    max-height: 5rem;
+    display: block;
+    margin: 0 auto;
+    fill: currentColor
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .share {
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: .5rem 1rem .5rem 0;
+    color: #353c4a;
+    border: .125rem solid #f3f3f3;
+    box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+    border-radius: 50%;
+    transition: 250ms;
+    
+    &:last-child {
+      margin-right: 0
+    }
+    
+    &:focus {
+      outline-color: inherit;
+    }
+  }
+  
+  .twitter {
+    &:hover,
+    &:focus {
+      color: #00ACED;
+      box-shadow: 0 0 24px 0 #00ACED
+    }
+  }
+  
+  .github {
+    &:hover,
+    &:focus {
+      color: #4183c4;
+      box-shadow: 0 0 24px 0 #4183c4
+    }
+  }
+  
+  .pinterest {
+    &:hover,
+    &:focus {
+      color: #bd081c;
+      box-shadow: 0 0 24px 0 #bd081c
+    }
+  }
+  
+  .youtube {
+    &:hover,
+    &:focus {
+      color: #cd201f;
+      box-shadow: 0 0 24px 0 #cd201f
+    }
+  }
+  
+  .facebook {
+    &:hover,
+    &:focus {
+      color: #3b5998;
+      box-shadow: 0 0 24px 0 #3b5998
+    }
+  }
+  
+  .google {
+    &:hover,
+    &:focus {
+      color: #dd4b39;
+      box-shadow: 0 0 24px 0 #dd4b39
+    }
+  }
+
+  .comms{
+    float: right;
+    word-wrap: normal;
+  }
+
+  .center {
+  transform: scale(1.5);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.article-card {
+  width: 450px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.article-card .date,
+.article-card .title {
+  margin: 0;
+}
+
+.article-card .date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.article-card .title {
+  font-size: 17px;
+  color: #ffbf00;
+}
+
+.vid{
+  float: right;
+  border: solid;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.gta2{
+  float: left;
+  border: solid;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.com1{
+  float: right;
+  border: solid;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.com2{
+  align-items: left;
+  border: solid;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.form{
+  width:340px;
+  height:440px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative;
+}
+
+.form_h2{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#78788c;
+  border-bottom:3px solid #78788c;
+}
+
+input{
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2;
+}
+
+input:focus{
+  border-bottom:2px solid #78788c;
+}
+
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a;
+}
+
+.send_btn{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;
+  color:#5a5a6e;
+  cursor:pointer;
+  transition:all .3s;
+}
+
+.send_btn:hover{
+  background:#78788c;
+  color:#fff;
+}
+
+.contact{
+  content:'Hi';
+  position:absolute;
+  bottom:-15px;
+  right:-20px;
+  background:#50505a;
+  color:#fff;
+  width:320px;
+  padding:16px 4px 16px 0;
+  border-radius:6px;
+  font-size:13px;
+  box-shadow:10px 10px 40px -14px #000;
+}
+
+span{
+  margin:0 5px 0 10px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "CORSAIR";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+
+.in{
+  float: right;
+}
